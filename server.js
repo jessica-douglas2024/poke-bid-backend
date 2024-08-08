@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 
 
-const URL = process.env.MONGO_URL;
+const URL = "mongodb+srv://user1:user1@cluster0.jw9cuev.mongodb.net/BidPokemonDB";
 
 mongoose.connect(URL, {useNewUrlParser: true, useUnifiedTopology: true})
     .then (()=>{
